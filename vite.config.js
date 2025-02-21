@@ -1,10 +1,8 @@
-// import { defineConfig } from 'vite'
-// import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [vue()],
-// })
-module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
-};
+// https://vite.dev/config/
+export default defineConfig({
+  // base: '/deploying-vite-project-example/',
+  plugins: [vue()],
+})
