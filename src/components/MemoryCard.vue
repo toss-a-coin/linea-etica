@@ -68,7 +68,7 @@
         obj.y = newPos.y;
         });
     
-        setTimeout(moveObjects, 10000); // Change position every 2 seconds
+        setTimeout(moveObjects, 1500); 
     }
 
     function handleClick(index) {
