@@ -9,14 +9,9 @@ import Intro from './components/Intro.vue'
 </template>
 
 <style>
-.game {
-  border-color: red;
-  width: 100vh;
-  height: 100vh;
-}
-
-.intro {
-  border-color: blue;
+@font-face {
+    font-family: 'Graphik Light';
+    src: url('@/assets/fonts/Graphik-Font-Family/GraphikLight.otf');
 }
 
 #app {
