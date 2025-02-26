@@ -14,8 +14,4 @@ import Intro from './components/Intro.vue'
     src: url('@/assets/fonts/Graphik-Font-Family/GraphikLight.otf');
 }
 
-#app {
-  width: 100vh;
-  height: 100vh;
-}
 </style>

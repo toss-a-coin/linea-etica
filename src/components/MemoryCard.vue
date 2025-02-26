@@ -1,5 +1,6 @@
 <template>
-    <div class="canvas" v-show="isVisible">
+    <main>
+        <div class="canvas" v-show="isVisible">
       <div v-for="(obj, index) in objects" 
         :key="index" 
         class="object"
@@ -24,6 +25,7 @@
                 </p>
             </div>
     </div>
+    </main>
   </template>
   
   <script setup>
@@ -95,7 +97,7 @@
             counterWrong += 1;
         }
         objects.value[index].opacity = 0;
-        objects.value[index].transition = 'opacity 1s ease-out';
+        objects.value[index].transition = 'opacity 0.5s ease-out';
     }
     
     onMounted(() => {
@@ -105,12 +107,16 @@
   </script>
   
   <style scoped>
+    main {
+        height: inherit;
+    }
+
     .object {
         position: absolute;
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        transition: all 1.5s ease-in-out;
+        /* transition: all 1.5s ease-in-out; */
         display: flex;
         justify-content: center;
         align-items: center;
