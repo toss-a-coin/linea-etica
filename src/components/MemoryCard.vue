@@ -45,7 +45,7 @@
         {text: "¿Dónde?", isRightAnswer: true} //Rigth answer
     ];
     const numObjects = elements.length;
-    const canvasSize = { width: window.innerWidth, height: innerHeight };
+    const canvasSize = { width: window.innerWidth -100, height: innerHeight - 100};
     const objects = ref([]);
     const constantColors = [
         "#046099",
@@ -107,9 +107,7 @@
   </script>
   
   <style scoped>
-    main {
-        height: inherit;
-    }
+
 
     .object {
         position: absolute;
