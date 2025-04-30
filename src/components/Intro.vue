@@ -1,8 +1,11 @@
 <template>
     <main class="intro">
             <div>
+                <h1>Actividad</h1>
                 <p>Actividad</p>
-                <h1>Linea Ética</h1>
+                <p>
+                    En la siguiente actividad visualizaras círculos con diferentes preguntas, selecciona las preguntas que corresponden con la información mostrada en el microbit anterior.
+                </p>
             </div>
         <button @click="startGame">
             <span class="shadow"></span>
@@ -39,5 +42,13 @@ button {
   justify-content: center;
   align-items: center;
   font-family: "Graphik Light";
+}
+
+p {
+    width: 300px;
+}
+
+h1 {
+    font-family: "Columbia Sans", 'Times New Roman';
 }
 </style>
